@@ -5,12 +5,9 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "rimraf lib && tsc",
-    "lint": "eslint \"src/**/*.ts\"",
+    "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "prepare": "yarn build",
-    "prepublishOnly": "git submodule update --init --recursive && yarn lint",
-    "preversion": "yarn lint",
     "version": "yarn format && git add -A src",
     "postversion": "git push && git push --tags"
   },
