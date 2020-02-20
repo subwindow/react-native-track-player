@@ -5,11 +5,6 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "format": "prettier --write \"src/**/*.ts\"",
-    "prepare": "yarn build",
-    "version": "yarn format && git add -A src",
-    "postversion": "git push && git push --tags"
   },
   "files": [
     "lib/**/*",
